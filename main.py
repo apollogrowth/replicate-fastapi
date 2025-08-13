@@ -40,10 +40,10 @@ def map_attire_description(attire, gender):
         return "a suit with no tie" if gender == "male" else "a business casual outfit"     # Updated description
     elif attire == "casual":
         return "a t-shirt or a button-up shirt or a flannel or a sweater vest, or something currently trendy and fashionable"
-    elif attire == "doctors": # UPDATED attire variable name from 'medical' to 'doctors'
+    elif attire == "medical professional": # UPDATED attire variable name from 'doctor' to 'medical professional'
         return "a white lab coat over scrubs" # Removed unneeded description
     elif attire == "clinician": # UPDATED attire variable name from 'scientist' to 'clinician' 
-        return "Modern medical scrubs" # UPDATED description of the clinician attire (e.g. nurses)  
+        return "a set of modern medical scrubs" # UPDATED description of the clinician attire (e.g. nurses)  
     else:
         return attire
 
@@ -52,13 +52,13 @@ def map_background_description(background):
     if background == "light gray":
         return "a neutral light grey professional studio photo background"     # Updated description
     elif background == "soft gradient":
-        return "a soft gradient background"
+        return "a soft white gradient background"     # Updated description
     elif background == "corporate office":
-        return "a bright and modern office with desks and computers in the background"
+        return "a bright, modern office in a skyscraper overlooking the city"
     elif background == "natural outdoors":
-        return "an open space within a famous US National Park with natural daytime lighting"
+        return "an open space within a famous US National Park with natural lighting"    # Updated description
     elif background == "trendy indoor space":
-        return "a picturesque view of the inside of a world-famous tourist attraction"
+        return "a picturesque view inside a world-famous tourist attraction"     # Updated description
     elif background == "startup office":
         return "a modern Bay-Area tech startup office"     # Updated description
     else:
